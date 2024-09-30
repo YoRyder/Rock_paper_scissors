@@ -1,3 +1,6 @@
+
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -5,43 +8,50 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1{
     font-size: 3.5rem;
-    color: black;
-
+    color: rgb(226, 24, 24);
+    text-shadow:  2px 2px black ;
+     font-family:'Times New Roman', Times, serif;
 }
 .choices{
-margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 .choices button{
-    font-size: 7.5rem;
-    min-width: 150px;
-    margin: 0 10px;
-    border-radius: 250px;
-    background-color: rgb(255, 0, 234);
+    font-size: 4.5rem;
+    width: 100px;
+    margin: 0 20px;
+    border-radius: 20%;
+    background: red;
     cursor: pointer;
-    transition: background-color 0.5s ease;
 }
 .choices button:hover{
-    background-color: rgb(255, 0, 234);
+    transform: scale(1.1);
+    background: rgb(11, 253, 63);
 }
-#playerdisplay, #computerdisplay{
-    font: size 2.5rem; 
+#playerDisplay, #computerDisplay,#resultDisplay{
+    font-size:  2.5rem; 
+    margin: 15px 0;
+    text-shadow: 1px 1px 2px black;
+}
 
-}
-#resultdisplay{
-    font-size: 5rem;
-    margin-top: 30px 0;
-}
 .scoreDisplay{
     font-size: 2rem;
 }
 
-.greenText #playerScoreDisplay{
+.greenText {
     color: greenyellow;
 
 }
-.redText #computerScoreDisplay{
+.redText{
     color: rgb(232, 50, 46);
 }
+.tieText{
+    color:blue;
+}
+
