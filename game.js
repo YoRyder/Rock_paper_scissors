@@ -21,15 +21,15 @@ function PlayGame(PlayerChoice) {
         tieScoreDisplay.textContent = tieScore;
     } else {
         switch (PlayerChoice.toLowerCase()) {
-            case "rock":
+           case "rock":
             result = (computerChoice === "scissors") ? "YOU WIN!" : "YOU LOSE!";
-            break;
-            case "paper":
+        break;
+           case "paper":
             result = (computerChoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
-            break;
-            case "scissors":
+        break;
+           case "scissors":
             result = (computerChoice === "paper") ? "YOU WIN!" : "YOU LOSE!";
-            break;
+        break;
         }
         if (result === "YOU WIN!") {
             playerScore++;
