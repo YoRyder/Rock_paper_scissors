@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <div id="choices">
-    <h1>Rock - Paper - Scissors</h1>
-    <button onclick="PlayGame('rock')">👊</button>
-    <button onclick="PlayGame('paper')">✋</button>
-    <button onclick="PlayGame('scissors')">✌️</button>
-</div>
+   <body background="https://static.vecteezy.com/system/resources/thumbnails/046/453/735/small_2x/boxing-ring-under-spotlight-with-no-people-emphasis-on-the-empty-ring-and-ropes-wide-space-for-text-perfect-for-advertising-photo.jpg">
+    
+   </body>
+    <div class="choices">
+        <h1>Rock-Paper-Scissors</h1>
+        <button onclick="PlayGame('rock')">👊</button>
+        <button onclick="PlayGame('paper')">✋</button>
+        <button onclick="PlayGame('scissors')">✌️</button>
+    </div>
 
-<div id="playerDisplay">Player:</div>
-<div id="computerDisplay">Computer:</div>
-<div id="resultDisplay">It's a tie!</div>
+    <div id="playerDisplay">Player:</div>
+    <div id="computerDisplay">Computer:</div>
+    <div id="resultDisplay">Result:</div>
 
-<div class="scoreDisplay">Player score:
-    <span id="playerScoreDisplay">0
-</span>
-</div>
+    <div class="scoreDisplay">Player score:
+        <span id="playerScoreDisplay">0</span>
+    </div>
 
-<div class="scoreDisplay">Computer score:
-    <span id="computerScoreDisplay">0
-</span>
-</div>
-<script src="game.js"></script>
+    <div class="scoreDisplay">Computer score:
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Tie score:
+        <span id="tieScoreDisplay">0</span>
+    </div>
+
+    <script src="game.js"></script>
 </body>
-
 </html>
